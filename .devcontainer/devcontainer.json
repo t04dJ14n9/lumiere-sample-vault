@@ -1,0 +1,24 @@
+{
+  "name": "Lumiere sample vault",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["t04dj14n9.lumiere"],
+      "settings": {
+        "workbench.editorAssociations": {
+          "*.md": "lumiere.markdown.editor",
+          "*.markdown": "lumiere.markdown.editor"
+        },
+        "workbench.startupEditor": "none",
+        "lumiere.markdown.plugins.backlinks.enabled": true,
+        "lumiere.markdown.plugins.outgoingLinks.enabled": true
+      }
+    },
+    "codespaces": {
+      "openFiles": ["wiki/index.md"]
+    }
+  }
+}

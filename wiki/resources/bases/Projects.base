@@ -1,0 +1,31 @@
+filters:
+  and:
+    - 'methodology_role == "project"'
+properties:
+  title:
+    displayName: Project
+  project_status:
+    displayName: Status
+views:
+  - type: table
+    name: Active projects
+    filters: 'project_status == "ongoing"'
+    order:
+      - title
+      - project_status
+      - priority
+      - deadline
+      - outcome
+    sort:
+      - property: priority
+        direction: ASC
+  - type: table
+    name: All projects
+    order:
+      - title
+      - project_status
+      - para
+      - deadline
+    sort:
+      - property: deadline
+        direction: DESC

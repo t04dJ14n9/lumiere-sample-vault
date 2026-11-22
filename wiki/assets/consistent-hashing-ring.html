@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consistent hashing ring</title>
+<style>
+  :root { color-scheme: light dark; --ink: #1f2933; --muted: #616e7c; --bg: #f7f9fb; --rule: #cbd2d9; --node: #2f6fdb; --key: #e07a1f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e4e7eb; --muted: #9aa5b1; --bg: #1f2933; --rule: #3e4c59; }
+  }
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 0; padding: 24px; color: var(--ink); background: var(--bg); }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p { color: var(--muted); margin: 0 0 16px; }
+  svg { width: 100%; height: auto; display: block; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+  button { font: inherit; padding: 6px 14px; border: 1px solid var(--rule); border-radius: 6px; background: transparent; color: var(--ink); cursor: pointer; }
+  button:hover { border-color: var(--node); }
+  output { display: block; color: var(--muted); min-height: 3em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Consistent hashing ring</h1>
+  <p>Twelve keys are placed on a ring. Each belongs to the first node met going clockwise. Add or remove a node and see which keys move.</p>
+  <svg id="ring" viewBox="0 0 400 400" role="img" aria-label="Hash ring with nodes and keys"></svg>
+  <div class="row">
+    <button id="add">Add a node</button>
+    <button id="remove">Remove a node</button>
+    <button id="reset">Reset</button>
+  </div>
+  <output id="status"></output>
+</main>
+<script>
+  // A made-up hash: spread names around the ring deterministically.
+  function hash(name) {
+    let h = 2166136261;
+    for (const c of name) h = Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0;
+    return (h % 3600) / 10;
+  }
+  const keys = Array.from({ length: 12 }, (_, i) => "key-" + (i + 1));
+  const initial = ["A", "B", "C"];
+  let nodes = initial.slice();
+  let owners = {};
+
+  function owner(key, list) {
+    const pos = hash(key);
+    const ring = list.map(n => ({ n, d: hash(n) })).sort((a, b) => a.d - b.d);
+    return (ring.find(x => x.d >= pos) || ring[0]).n;
+  }
+  function point(deg, r) {
+    const a = (deg - 90) * Math.PI / 180;
+    return [200 + r * Math.cos(a), 200 + r * Math.sin(a)];
+  }
+  function draw(moved) {
+    const svg = document.getElementById("ring");
+    let out = '<circle cx="200" cy="200" r="130" fill="none" stroke="currentColor" stroke-opacity=".2" stroke-width="10"/>';
+    for (const n of nodes) {
+      const [x, y] = point(hash(n), 130);
+      out += `<circle cx="${x}" cy="${y}" r="18" fill="#2f6fdb" stroke="#fff" stroke-width="3"/>` +
+             `<text x="${x}" y="${y + 5}" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">${n}</text>`;
+    }
+    for (const k of keys) {
+      const [x, y] = point(hash(k), 130);
+      const [lx, ly] = point(hash(k), 162);
+      const m = moved.includes(k);
+      out += `<circle cx="${x}" cy="${y}" r="${m ? 8 : 6}" fill="${m ? "#d64545" : "#e07a1f"}" stroke="#fff" stroke-width="2"/>` +
+             `<text x="${lx}" y="${ly + 4}" text-anchor="middle" font-size="10" fill="currentColor" fill-opacity=".7">${k.slice(4)}</text>`;
+    }
+    svg.innerHTML = out;
+  }
+  function update(note) {
+    const next = {};
+    for (const k of keys) next[k] = owner(k, nodes);
+    const moved = keys.filter(k => owners[k] && owners[k] !== next[k]);
+    owners = next;
+    draw(moved);
+    const counts = nodes.map(n => n + ": " + keys.filter(k => next[k] === n).length).join(", ");
+    document.getElementById("status").textContent =
+      (note ? note + " " : "") + (moved.length ? moved.length + " of 12 keys moved. " : "") + "Keys per node, " + counts + ".";
+  }
+  document.getElementById("add").onclick = () => {
+    const name = "ABCDEFGH".split("").find(n => !nodes.includes(n));
+    if (name) { nodes.push(name); update("Added " + name + "."); }
+  };
+  document.getElementById("remove").onclick = () => {
+    if (nodes.length > 1) { const gone = nodes.pop(); update("Removed " + gone + "."); }
+  };
+  document.getElementById("reset").onclick = () => { nodes = initial.slice(); owners = {}; update("Reset."); };
+  update("");
+</script>
+</body>
+</html>

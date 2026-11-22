@@ -1,0 +1,8 @@
+{
+  "workbench.editorAssociations": {
+    "*.md": "lumiere.markdown.editor",
+    "*.markdown": "lumiere.markdown.editor"
+  },
+  "lumiere.markdown.plugins.backlinks.enabled": true,
+  "lumiere.markdown.plugins.outgoingLinks.enabled": true
+}

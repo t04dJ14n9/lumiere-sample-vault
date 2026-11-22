@@ -1,0 +1,295 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /Outlines 13 0 R /PageMode /UseOutlines >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [8 0 R 10 0 R 12 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 2671 >>
+stream
+0.796 0.824 0.851 RG
+1 w 60 790 m 535 790 l S
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 60 798 Td (Replication and Quorums: lecture notes) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 472 798 Td (Sample vault, CC0) Tj ET
+0.380 0.431 0.486 rg
+BT /F1 9 Tf 278 42 Td (Page 1 of 3) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 26 Tf 60 722 Td (Replication and Quorums) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 13 Tf 60 696 Td (Lecture notes for the Lumiere sample vault) Tj ET
+0.184 0.435 0.859 RG
+2 w 60 682 m 535 682 l S
+0.122 0.161 0.200 rg
+BT /F2 13 Tf 60 642 Td (Contents) Tj ET
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 72 620 Td (1  Overview .......................................... page 1) Tj ET
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 72 602 Td (2  Quorums ........................................... page 2) Tj ET
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 72 584 Td (3  Failure scenarios ................................. page 3) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 532 Td (These notes are synthetic: they were written for the sample vault and drawn by) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 517 Td (tools/make_assets.py. They exist so that a note can link to a page of a PDF and embed) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 502 Td (that page, as a note about a real paper would.) Tj ET
+0.184 0.435 0.859 rg
+BT /F2 16 Tf 60 463 Td (1  Overview) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 439 Td (A replicated system keeps several copies of the same data so that it survives the) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 424 Td (loss of a machine and serves reads from nearby. The price is that the copies can) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 409 Td (disagree. Almost every design decision in this area is a way of deciding how much) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 394 Td (disagreement to allow, for how long, and who may see it.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 367 Td (Three ideas carry most of the weight. A leader decides the order of writes, so that) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 352 Td (every copy applies them in the same sequence. A quorum is a group of copies large) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 337 Td (enough that any two groups overlap, so that news cannot be missed by everyone. A) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 322 Td (clock, even a logical one, lets two machines agree which of two events came first, or) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 307 Td (admit that neither did.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 280 Td (Page 2 turns the second idea into arithmetic. Page 3 walks through four ways the) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 265 Td (arithmetic is tested by real failures.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 3771 >>
+stream
+0.796 0.824 0.851 RG
+1 w 60 790 m 535 790 l S
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 60 798 Td (Replication and Quorums: lecture notes) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 472 798 Td (Sample vault, CC0) Tj ET
+0.380 0.431 0.486 rg
+BT /F1 9 Tf 278 42 Td (Page 2 of 3) Tj ET
+0.184 0.435 0.859 rg
+BT /F2 16 Tf 60 742 Td (2  Quorums) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 718 Td (Let N be the number of replicas, W the number that must acknowledge a write, and R) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 703 Td (the number that must answer a read. The two rules to remember are:) Tj ET
+0.969 0.976 0.984 rg
+0.796 0.824 0.851 RG
+1 w 60 632 475 50 re B
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 80 660 Td (R + W > N     reads and writes overlap in at least one replica) Tj ET
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 80 642 Td (W > N / 2     two writes cannot both succeed on disjoint groups) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 608 Td (With a majority quorum, W = R = floor\(N / 2\) + 1, so a cluster of N = 2f + 1 replicas) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 593 Td (keeps working while f of them are down. The table shows common choices.) Tj ET
+0.894 0.922 0.949 rg
+1 w 60 546 475 22 re f
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 68 553 Td (N) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 128 553 Td (W) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 188 553 Td (R) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 248 553 Td (Failures) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 358 553 Td (Note) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 524 m 535 524 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 531 Td (3) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 128 531 Td (2) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 188 531 Td (2) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 248 531 Td (1) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 358 531 Td (smallest useful cluster) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 502 m 535 502 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 509 Td (5) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 128 509 Td (3) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 188 509 Td (3) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 248 509 Td (2) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 358 509 Td (common production size) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 480 m 535 480 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 487 Td (5) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 128 487 Td (5) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 188 487 Td (1) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 248 487 Td (0 writes) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 358 487 Td (fast reads, fragile writes) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 458 m 535 458 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 465 Td (7) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 128 465 Td (4) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 188 465 Td (4) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 248 465 Td (3) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 358 465 Td (survives a rack and a node) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 10 Tf 60 418 Td (Figure 1. N = 5, W = 3, R = 3. R3 is in both quorums.) Tj ET
+0.184 0.435 0.859 rg
+0.122 0.161 0.200 RG
+1 w 70 344 60 60 re B
+1.000 1.000 1.000 rg
+BT /F2 13 Tf 89 368 Td (R1) Tj ET
+0.184 0.435 0.859 rg
+0.122 0.161 0.200 RG
+1 w 160 344 60 60 re B
+1.000 1.000 1.000 rg
+BT /F2 13 Tf 179 368 Td (R2) Tj ET
+0.184 0.620 0.435 rg
+0.122 0.161 0.200 RG
+1 w 250 344 60 60 re B
+1.000 1.000 1.000 rg
+BT /F2 13 Tf 269 368 Td (R3) Tj ET
+0.878 0.478 0.122 rg
+0.122 0.161 0.200 RG
+1 w 340 344 60 60 re B
+1.000 1.000 1.000 rg
+BT /F2 13 Tf 359 368 Td (R4) Tj ET
+0.878 0.478 0.122 rg
+0.122 0.161 0.200 RG
+1 w 430 344 60 60 re B
+1.000 1.000 1.000 rg
+BT /F2 13 Tf 449 368 Td (R5) Tj ET
+0.184 0.435 0.859 rg
+BT /F1 9 Tf 70 322 Td (blue: write quorum) Tj ET
+0.878 0.478 0.122 rg
+BT /F1 9 Tf 210 322 Td (orange: read quorum) Tj ET
+0.184 0.620 0.435 rg
+BT /F1 9 Tf 350 322 Td (green: in both) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 1854 >>
+stream
+0.796 0.824 0.851 RG
+1 w 60 790 m 535 790 l S
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 60 798 Td (Replication and Quorums: lecture notes) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 472 798 Td (Sample vault, CC0) Tj ET
+0.380 0.431 0.486 rg
+BT /F1 9 Tf 278 42 Td (Page 3 of 3) Tj ET
+0.184 0.435 0.859 rg
+BT /F2 16 Tf 60 742 Td (3  Failure scenarios) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 11 Tf 60 718 Td (1.  A replica crashes.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 701 Td (With N = 5 and W = R = 3, two replicas can be down and both reads and writes) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 686 Td (still find a quorum.) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 11 Tf 60 657 Td (2.  A replica is slow.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 640 Td (A slow replica counts as down for latency: the request waits for the fastest W or) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 625 Td (R answers, not for all N.) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 11 Tf 60 596 Td (3.  The network splits 3 and 2.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 579 Td (The side with three replicas can keep going. The side with two cannot reach any) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 564 Td (quorum and must refuse requests.) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 11 Tf 60 535 Td (4.  A write reaches only two replicas.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 518 Td (It did not reach W = 3, so the client was never told it succeeded. Later reads) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 78 503 Td (may or may not see it, and repair must settle which.) Tj ET
+1.000 0.957 0.898 rg
+0.878 0.478 0.122 RG
+1 w 60 410 475 58 re B
+0.122 0.161 0.200 rg
+BT /F4 10 Tf 74 446 Td (Summary. Quorums trade availability for agreement: the larger the quorum, the fewer) Tj ET
+0.122 0.161 0.200 rg
+BT /F4 10 Tf 74 431 Td (failures a request survives and the stronger the guarantee it gets.) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Type /Outlines /First 14 0 R /Last 16 0 R /Count 3 >>
+endobj
+14 0 obj
+<< /Title (1 Overview) /Parent 13 0 R /Next 15 0 R /Dest [8 0 R /XYZ 0 842 0] >>
+endobj
+15 0 obj
+<< /Title (2 Quorums) /Parent 13 0 R /Prev 14 0 R /Next 16 0 R /Dest [10 0 R /XYZ 0 842 0] >>
+endobj
+16 0 obj
+<< /Title (3 Failure scenarios) /Parent 13 0 R /Prev 15 0 R /Dest [12 0 R /XYZ 0 842 0] >>
+endobj
+17 0 obj
+<< /Title (Replication and Quorums: lecture notes) /Author (Lumiere sample vault) /Subject (Synthetic lecture notes, CC0) /Producer (tools/make_assets.py) /CreationDate (D:20261122000000Z) >>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000104 00000 n 
+0000000175 00000 n 
+0000000272 00000 n 
+0000000374 00000 n 
+0000000469 00000 n 
+0000000574 00000 n 
+0000003297 00000 n 
+0000003453 00000 n 
+0000007276 00000 n 
+0000007433 00000 n 
+0000009340 00000 n 
+0000009498 00000 n 
+0000009572 00000 n 
+0000009669 00000 n 
+0000009779 00000 n 
+0000009886 00000 n 
+trailer
+<< /Size 18 /Root 1 0 R /Info 17 0 R >>
+startxref
+10094
+%%EOF

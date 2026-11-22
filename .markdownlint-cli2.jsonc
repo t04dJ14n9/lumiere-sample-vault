@@ -1,0 +1,23 @@
+{
+  // Obsidian syntax (callouts, wikilinks, block ids, embeds) is deliberate.
+  "config": {
+    "default": true,
+    "MD007": { "indent": 4 },
+    "MD010": { "code_blocks": false },
+    "MD013": false,
+    "MD028": false,
+    "MD024": { "siblings_only": true },
+    "MD025": { "front_matter_title": "" },
+    "MD033": false,
+    "MD036": false,
+    "MD041": false,
+    "MD051": false,
+    "MD052": false,
+    "MD054": false,
+    "MD055": false,
+    "MD056": false,
+    "MD058": false,
+    "MD060": false
+  },
+  "ignores": ["node_modules/**", "LICENSE"]
+}

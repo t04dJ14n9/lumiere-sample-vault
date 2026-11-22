@@ -1,0 +1,42 @@
+filters:
+  and:
+    - file.inFolder("wiki/resources/notes")
+    - 'type != "source"'
+formulas:
+  review: 'if(reviewed, "reviewed", "to review")'
+properties:
+  status:
+    displayName: Maturity
+  reading_time:
+    displayName: Minutes
+  formula.review:
+    displayName: Review
+views:
+  - type: table
+    name: All notes
+    order:
+      - file.name
+      - type
+      - status
+      - reading_time
+      - formula.review
+      - updated
+    sort:
+      - property: updated
+        direction: DESC
+  - type: cards
+    name: By maturity
+    order:
+      - file.name
+      - status
+    groupBy:
+      property: status
+      direction: ASC
+  - type: list
+    name: Recently touched
+    order:
+      - file.name
+    sort:
+      - property: updated
+        direction: DESC
+    limit: 5

@@ -1,0 +1,14 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "tags": "tags",
+    "created": "date",
+    "updated": "date",
+    "deadline": "date",
+    "reviewed": "checkbox",
+    "reading_time": "number",
+    "priority": "number",
+    "pages": "number",
+    "mocs": "multitext"
+  }
+}
