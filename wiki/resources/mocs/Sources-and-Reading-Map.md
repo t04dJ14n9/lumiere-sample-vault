@@ -3,10 +3,10 @@ title: Sources and Reading Map
 type: meta
 methodology_role: moc
 status: developing
-created: 2026-10-22
-updated: 2026-11-04
+created: 2026-11-22
+updated: 2026-11-26
 para: resource
-area: "[[wiki/areas/Distributed-Systems-Study|Distributed Systems Study]]"
+area: "[[wiki/areas/LLM-Study|LLM Study]]"
 tags:
   - moc
   - source
@@ -14,21 +14,24 @@ tags:
 
 # Sources and Reading Map
 
-Where the claims in the notes come from. Each source gets a source note that records what it says and where, with page links for PDFs.
+What the notes are based on.
 
-## Sources
+## In this vault
 
-- [Replication and Quorums Lecture Notes](/wiki/resources/notes/Source-Replication-and-Quorums-Lecture-Notes.md): a 3-page PDF with a quorum table and failure scenarios. [Open the PDF](/wiki/assets/Replication-and-Quorums-Lecture-Notes.pdf) or jump to [page 2](/wiki/assets/Replication-and-Quorums-Lecture-Notes.pdf#page=2).
+Both PDFs were written for this vault and carry annotations you can open in Lumiere's reader.
 
-## Reading queue
+- [nanochat Study Notes](/wiki/resources/notes/Source-nanochat-Study-Notes.md), 3 pages
+- [Scaling Laws Cheat Sheet](/wiki/resources/notes/Source-Scaling-Laws-Cheat-Sheet.md), 1 page
 
-- [ ] The Raft paper's election and safety sections
-- [ ] A survey of Paxos variants
-- [ ] An engineering write-up of a production failover
+## Outside, linked only
 
-> [!note] How a source note is written
-> A source note has the same properties as any other note (`type: source`), a link to the file, the key points with page links, and a provenance line. Claims in other notes cite it with a footnote.
+| Source | Used in |
+| --- | --- |
+| [nanochat README at 92d63d4](https://github.com/karpathy/nanochat/blob/92d63d4e8bb4df75c3b71618f31ddde2378b2bcd/README.md) | [[nanochat]], [[Time-to-GPT-2-Leaderboard]], [[What-Does-a-Tiny-Chat-Model-Cost]] |
+| [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | [[Transformer-Block]] |
+| [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361) | [[Scaling-Laws-and-Compute]] |
+| [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556) | [[Scaling-Laws-and-Compute]] |
+| [DeepSeekMath](https://arxiv.org/abs/2402.03300) | [[Reasoning-Models-and-RL]] |
+| [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | [[Reasoning-Models-and-RL]] |
 
-## Adjacent maps
-
-- [Distributed Systems Map](/wiki/resources/mocs/Distributed-Systems-Map.md)
+Nothing from these is copied here: the notes summarize them in their own words and link out.

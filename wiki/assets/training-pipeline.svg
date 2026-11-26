@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 196" width="800" height="196" role="img" aria-label="nanochat training pipeline: tokenizer, pretraining, SFT, RL, eval, chat">
+<title>nanochat training pipeline: tokenizer, pretraining, SFT, RL, eval, chat</title>
+<rect x="0.5" y="0.5" width="799" height="195" rx="14" fill="#f7f9fb" stroke="#cbd2d9"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f2933"/></marker></defs>
+<text x="400" y="36" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#1f2933" text-anchor="middle" font-weight="bold">From raw text to a model you can talk to</text>
+<rect x="24" y="70" width="108" height="64" rx="10" fill="#2f6fdb" fill-opacity="0.9"/>
+<text x="78" y="98" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Tokenizer</text>
+<text x="78" y="120" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">tok_train</text>
+<path d="M 134 102 L 150 102" stroke="#1f2933" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="152" y="70" width="108" height="64" rx="10" fill="#2f6fdb" fill-opacity="0.9"/>
+<text x="206" y="98" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Pretraining</text>
+<text x="206" y="120" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">base_train</text>
+<path d="M 262 102 L 278 102" stroke="#1f2933" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="280" y="70" width="108" height="64" rx="10" fill="#2f9e6f" fill-opacity="0.9"/>
+<text x="334" y="98" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">SFT</text>
+<text x="334" y="120" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">chat_sft</text>
+<path d="M 390 102 L 406 102" stroke="#1f2933" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="408" y="70" width="108" height="64" rx="10" fill="#2f9e6f" fill-opacity="0.9"/>
+<text x="462" y="98" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">RL</text>
+<text x="462" y="120" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">chat_rl</text>
+<path d="M 518 102 L 534 102" stroke="#1f2933" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="536" y="70" width="108" height="64" rx="10" fill="#e07a1f" fill-opacity="0.9"/>
+<text x="590" y="98" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Eval</text>
+<text x="590" y="120" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">chat_eval</text>
+<path d="M 646 102 L 662 102" stroke="#1f2933" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="664" y="70" width="108" height="64" rx="10" fill="#e07a1f" fill-opacity="0.9"/>
+<text x="718" y="98" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Chat</text>
+<text x="718" y="120" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">chat_cli</text>
+<text x="140" y="168" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2f6fdb" text-anchor="middle" font-weight="normal">base model</text>
+<text x="396" y="168" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2f9e6f" text-anchor="middle" font-weight="normal">chat model</text>
+<text x="652" y="168" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#e07a1f" text-anchor="middle" font-weight="normal">measure and use it</text>
+</svg>

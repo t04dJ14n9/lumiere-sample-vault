@@ -5,12 +5,12 @@ aliases:
 type: concept
 status: seed
 created: 2026-11-22
-updated: 2026-11-22
+updated: 2026-11-26
 reading_time: 2
 reviewed: false
 para: resource
 mocs:
-  - "[[wiki/resources/mocs/Distributed-Systems-Map|Distributed Systems Map]]"
+  - "[[wiki/resources/mocs/LLM-Map|LLM Map]]"
 tags:
   - sandbox
 ---
@@ -37,9 +37,9 @@ Text can be ==highlighted==, ~~struck through~~, written with `inline code`, or 
 > [!note] Callouts are blockquotes with a type
 > Change `note` to `warning`, `tip`, `bug`, `quote`, `success` or any word you like.
 
-Inline math such as $e^{i\pi} + 1 = 0$ sits in a sentence. A display formula gets its own line:
+Inline math such as $\mathrm{softmax}(z)_i = e^{z_i} / \sum_j e^{z_j}$ sits in a sentence. A display formula gets its own line:
 
-$$\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$$
+$$C \approx 6ND$$
 
 | Try | Then |
 | --- | --- |

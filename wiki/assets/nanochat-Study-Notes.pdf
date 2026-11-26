@@ -1,0 +1,336 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /Outlines 31 0 R /PageMode /UseOutlines >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [14 0 R 22 0 R 30 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<<  /Length 2771 >>
+stream
+0.796 0.824 0.851 RG
+1 w 60 790 m 535 790 l S
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 60 798 Td (nanochat study notes) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 472 798 Td (Sample vault, CC0) Tj ET
+0.380 0.431 0.486 rg
+BT /F1 9 Tf 278 42 Td (Page 1 of 3) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 26 Tf 60 722 Td (nanochat Study Notes) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 13 Tf 60 696 Td (Reading notes on a small, complete LLM training harness) Tj ET
+0.184 0.435 0.859 RG
+2 w 60 682 m 535 682 l S
+0.122 0.161 0.200 rg
+BT /F2 13 Tf 60 642 Td (Contents) Tj ET
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 72 620 Td (1  The pipeline ....................................... page 1) Tj ET
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 72 602 Td (2  What it costs ...................................... page 2) Tj ET
+0.122 0.161 0.200 rg
+BT /F3 10 Tf 72 584 Td (3  After pretraining .................................. page 3) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 10 Tf 60 532 Td (These notes are synthetic: written for the sample vault and drawn by tools/make_assets.py. They) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 10 Tf 60 517 Td (summarize, in our own words, what the nanochat README describes. Read the repository itself for the) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 10 Tf 60 502 Td (details.) Tj ET
+0.184 0.435 0.859 rg
+BT /F2 16 Tf 60 463 Td (1  The pipeline) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 439 Td (nanochat covers every stage of building a chat model in one small codebase: training a) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 424 Td (tokenizer, pretraining a base model, finetuning it into a chat model, evaluating it, and talking) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 409 Td (to it from a command line.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 382 Td (One number sets the size of the model: the depth, the number of transformer layers. Width,) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 367 Td (heads, learning rates and the training horizon are derived from it so that each size comes out) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 352 Td (compute optimal.) Tj ET
+0.184 0.435 0.859 rg
+1 w 60 271 70 36 re f
+1.000 1.000 1.000 rg
+BT /F2 11 Tf 68 284 Td (tokenizer) Tj ET
+0.184 0.435 0.859 rg
+1 w 140 271 70 36 re f
+1.000 1.000 1.000 rg
+BT /F2 11 Tf 148 284 Td (pretrain) Tj ET
+0.184 0.620 0.435 rg
+1 w 220 271 70 36 re f
+1.000 1.000 1.000 rg
+BT /F2 11 Tf 228 284 Td (SFT) Tj ET
+0.184 0.620 0.435 rg
+1 w 300 271 70 36 re f
+1.000 1.000 1.000 rg
+BT /F2 11 Tf 308 284 Td (RL) Tj ET
+0.878 0.478 0.122 rg
+1 w 380 271 70 36 re f
+1.000 1.000 1.000 rg
+BT /F2 11 Tf 388 284 Td (eval) Tj ET
+0.878 0.478 0.122 rg
+1 w 460 271 70 36 re f
+1.000 1.000 1.000 rg
+BT /F2 11 Tf 468 284 Td (chat) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 10 Tf 60 247 Td (Figure 1. The six stages, as the repository's scripts are named.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /XObject /Subtype /Form /BBox [59.00 435.92 498.58 449.12] /Resources << /ExtGState << /GS << /Type /ExtGState /BM /Multiply /ca 0.55 >> >> >> /Length 52 >>
+stream
+/GS gs 1 0.86 0.25 rg 59.00 435.92 439.58 13.20 re f
+endstream
+endobj
+9 0 obj
+<< /Type /Annot /Subtype /Highlight /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-8) /Contents (The point of the repo: one codebase, every stage, small enough to read.) /Rect [59.00 435.92 498.58 449.12] /QuadPoints [59.00 449.12 498.58 449.12 59.00 435.92 498.58 435.92] /C [1 0.86 0.25] /AP << /N 8 0 R >> >>
+endobj
+10 0 obj
+<< /Type /XObject /Subtype /Form /BBox [59.00 378.92 508.15 392.12] /Resources <<  >> /Length 56 >>
+stream
+0.18 0.44 0.86 RG 1.2 w 59.00 379.92 m 508.15 379.92 l S
+endstream
+endobj
+11 0 obj
+<< /Type /Annot /Subtype /Underline /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-10) /Contents (A single dial: --depth.) /Rect [59.00 378.92 508.15 392.12] /QuadPoints [59.00 392.12 508.15 392.12 59.00 378.92 508.15 378.92] /C [0.18 0.44 0.86] /AP << /N 10 0 R >> >>
+endobj
+12 0 obj
+<< /Type /XObject /Subtype /Form /BBox [540.00 349.00 558.00 367.00] /Resources <<  >> /Length 159 >>
+stream
+1 0.86 0.25 rg 0.55 0.42 0.05 RG 1 w 540.50 349.50 17 17 re B 544.00 361.00 m 554.00 361.00 l 544.00 357.00 m 554.00 357.00 l 544.00 353.00 m 551.00 353.00 l S
+endstream
+endobj
+13 0 obj
+<< /Type /Annot /Subtype /Text /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-12) /Contents (Compare with the scaling-laws cheat sheet: compute optimal means tokens grow with parameters.) /Rect [540.00 349.00 558.00 367.00] /Name /Comment /Open false /C [1 0.86 0.25] /AP << /N 12 0 R >> >>
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R /Annots [9 0 R 11 0 R 13 0 R] >>
+endobj
+15 0 obj
+<<  /Length 2040 >>
+stream
+0.796 0.824 0.851 RG
+1 w 60 790 m 535 790 l S
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 60 798 Td (nanochat study notes) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 472 798 Td (Sample vault, CC0) Tj ET
+0.380 0.431 0.486 rg
+BT /F1 9 Tf 278 42 Td (Page 2 of 3) Tj ET
+0.184 0.435 0.859 rg
+BT /F2 16 Tf 60 742 Td (2  What it costs) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 718 Td (Training compute is usually estimated as C = 6 N D floating-point operations, for N parameters) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 703 Td (and D training tokens. Cost then follows from GPU hours and an hourly price.) Tj ET
+0.894 0.922 0.949 rg
+1 w 60 650 475 22 re f
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 68 657 Td (Quantity) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 258 657 Td (Value) Tj ET
+0.122 0.161 0.200 rg
+BT /F2 10 Tf 408 657 Td (Note) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 628 m 535 628 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 635 Td (Node) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 258 635 Td (8 x H100) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 408 635 Td (one machine) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 606 m 535 606 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 613 Td (Price assumed) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 258 613 Td (about $3 per GPU-hour) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 408 613 Td (so about $24 an hour) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 584 m 535 584 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 591 Td (Time to GPT-2) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 258 591 Td (about 2 hours) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 408 591 Td (so about $48) Tj ET
+0.796 0.824 0.851 RG
+1 w 60 562 m 535 562 l S
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 68 569 Td (GPT-2 in 2019) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 258 569 Td (about $43,000) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 10 Tf 408 569 Td (for comparison) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 532 Td (The README reports these figures for its GPT-2 grade run, measured by the DCLM CORE score.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 517 Td (Spot instances bring the total down further.) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /XObject /Subtype /Form /BBox [59.00 714.92 526.41 728.12] /Resources << /ExtGState << /GS << /Type /ExtGState /BM /Multiply /ca 0.55 >> >> >> /Length 52 >>
+stream
+/GS gs 1 0.86 0.25 rg 59.00 714.92 467.41 13.20 re f
+endstream
+endobj
+17 0 obj
+<< /Type /Annot /Subtype /Highlight /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-16) /Contents (The 6ND rule of thumb; see the scaling-laws cheat sheet.) /Rect [59.00 714.92 526.41 728.12] /QuadPoints [59.00 728.12 526.41 728.12 59.00 714.92 526.41 714.92] /C [1 0.86 0.25] /AP << /N 16 0 R >> >>
+endobj
+18 0 obj
+<< /Type /XObject /Subtype /Form /BBox [59.00 528.92 523.33 542.12] /Resources <<  >> /Length 56 >>
+stream
+0.18 0.44 0.86 RG 1.2 w 59.00 529.92 m 523.33 529.92 l S
+endstream
+endobj
+19 0 obj
+<< /Type /Annot /Subtype /Underline /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-18) /Contents (All four numbers come from the README; nothing here was measured by us.) /Rect [59.00 528.92 523.33 542.12] /QuadPoints [59.00 542.12 523.33 542.12 59.00 528.92 523.33 528.92] /C [0.18 0.44 0.86] /AP << /N 18 0 R >> >>
+endobj
+20 0 obj
+<< /Type /XObject /Subtype /Form /BBox [330.00 410.00 535.00 472.00] /Resources << /Font << /Helv 3 0 R >> >> /Length 312 >>
+stream
+1 0.97 0.88 rg 0.88 0.48 0.12 RG 1 w 330.50 410.50 204 61 re B 0.12 0.16 0.2 rg BT /Helv 9 Tf 336.00 458.00 Td (Margin note: the leaderboard keeps lowering) Tj ET BT /Helv 9 Tf 336.00 447.00 Td (the time. Check the README for the current row) Tj ET BT /Helv 9 Tf 336.00 436.00 Td (before quoting a number.) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Annot /Subtype /FreeText /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-20) /Contents (Margin note: the leaderboard keeps lowering the time. Check the README for the current row before quoting a number.) /Rect [330.00 410.00 535.00 472.00] /DA (0.12 0.16 0.2 rg /Helv 9 Tf) /C [0.88 0.48 0.12] /AP << /N 20 0 R >> >>
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 15 0 R /Annots [17 0 R 19 0 R 21 0 R] >>
+endobj
+23 0 obj
+<<  /Length 1209 >>
+stream
+0.796 0.824 0.851 RG
+1 w 60 790 m 535 790 l S
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 60 798 Td (nanochat study notes) Tj ET
+0.380 0.431 0.486 rg
+BT /F4 9 Tf 472 798 Td (Sample vault, CC0) Tj ET
+0.380 0.431 0.486 rg
+BT /F1 9 Tf 278 42 Td (Page 3 of 3) Tj ET
+0.184 0.435 0.859 rg
+BT /F2 16 Tf 60 742 Td (3  After pretraining) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 718 Td (A base model only continues text. Supervised finetuning \(SFT\) on conversations teaches it the) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 703 Td (shape of a chat: whose turn it is, and when to stop.) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 676 Td (Reinforcement learning then rewards answers that a program can check, such as a final) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 661 Td (number in a math word problem. The model samples several answers, and the better ones are) Tj ET
+0.122 0.161 0.200 rg
+BT /F1 11 Tf 60 646 Td (made more likely.) Tj ET
+1.000 0.957 0.898 rg
+0.878 0.478 0.122 RG
+1 w 60 557 475 58 re B
+0.122 0.161 0.200 rg
+BT /F4 10 Tf 74 593 Td (Summary. Pretraining buys knowledge, SFT buys manners, and RL on checkable tasks buys) Tj ET
+0.122 0.161 0.200 rg
+BT /F4 10 Tf 74 578 Td (reliability on those tasks.) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /XObject /Subtype /Form /BBox [59.00 699.92 316.86 713.12] /Resources << /ExtGState << /GS << /Type /ExtGState /BM /Multiply /ca 0.55 >> >> >> /Length 52 >>
+stream
+/GS gs 1 0.86 0.25 rg 59.00 699.92 257.86 13.20 re f
+endstream
+endobj
+25 0 obj
+<< /Type /Annot /Subtype /Highlight /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-24) /Contents (SFT teaches format more than knowledge.) /Rect [59.00 699.92 316.86 713.12] /QuadPoints [59.00 713.12 316.86 713.12 59.00 699.92 316.86 699.92] /C [1 0.86 0.25] /AP << /N 24 0 R >> >>
+endobj
+26 0 obj
+<< /Type /XObject /Subtype /Form /BBox [59.00 672.92 498.80 686.12] /Resources <<  >> /Length 56 >>
+stream
+0.18 0.44 0.86 RG 1.2 w 59.00 673.92 m 498.80 673.92 l S
+endstream
+endobj
+27 0 obj
+<< /Type /Annot /Subtype /Underline /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-26) /Contents (Verifiable rewards: the checker is code, not a person.) /Rect [59.00 672.92 498.80 686.12] /QuadPoints [59.00 686.12 498.80 686.12 59.00 672.92 498.80 672.92] /C [0.18 0.44 0.86] /AP << /N 26 0 R >> >>
+endobj
+28 0 obj
+<< /Type /XObject /Subtype /Form /BBox [540.00 637.00 558.00 655.00] /Resources <<  >> /Length 159 >>
+stream
+1 0.86 0.25 rg 0.55 0.42 0.05 RG 1 w 540.50 637.50 17 17 re B 544.00 649.00 m 554.00 649.00 l 544.00 645.00 m 554.00 645.00 l 544.00 641.00 m 551.00 641.00 l S
+endstream
+endobj
+29 0 obj
+<< /Type /Annot /Subtype /Text /F 4 /T (Lumiere sample vault) /M (D:20261126000000Z) /NM (sample-28) /Contents (The README lists an RL script \(chat_rl.py\) and a GSM8K task; see the reasoning note in the vault.) /Rect [540.00 637.00 558.00 655.00] /Name /Comment /Open false /C [1 0.86 0.25] /AP << /N 28 0 R >> >>
+endobj
+30 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 23 0 R /Annots [25 0 R 27 0 R 29 0 R] >>
+endobj
+31 0 obj
+<< /Type /Outlines /First 32 0 R /Last 34 0 R /Count 3 >>
+endobj
+32 0 obj
+<< /Title (1 The pipeline) /Parent 31 0 R /Next 33 0 R /Dest [14 0 R /XYZ 0 842 0] >>
+endobj
+33 0 obj
+<< /Title (2 What it costs) /Parent 31 0 R /Prev 32 0 R /Next 34 0 R /Dest [22 0 R /XYZ 0 842 0] >>
+endobj
+34 0 obj
+<< /Title (3 After pretraining) /Parent 31 0 R /Prev 33 0 R /Dest [30 0 R /XYZ 0 842 0] >>
+endobj
+35 0 obj
+<< /Title (nanochat study notes) /Author (Lumiere sample vault) /Subject (Synthetic reading notes, CC0) /Producer (tools/make_assets.py) /CreationDate (D:20261126000000Z) >>
+endobj
+xref
+0 36
+0000000000 65535 f 
+0000000015 00000 n 
+0000000104 00000 n 
+0000000176 00000 n 
+0000000273 00000 n 
+0000000375 00000 n 
+0000000470 00000 n 
+0000000575 00000 n 
+0000003399 00000 n 
+0000003650 00000 n 
+0000003996 00000 n 
+0000004186 00000 n 
+0000004490 00000 n 
+0000004785 00000 n 
+0000005111 00000 n 
+0000005298 00000 n 
+0000007392 00000 n 
+0000007644 00000 n 
+0000007978 00000 n 
+0000008168 00000 n 
+0000008520 00000 n 
+0000008991 00000 n 
+0000009353 00000 n 
+0000009542 00000 n 
+0000010805 00000 n 
+0000011057 00000 n 
+0000011374 00000 n 
+0000011564 00000 n 
+0000011899 00000 n 
+0000012194 00000 n 
+0000012526 00000 n 
+0000012715 00000 n 
+0000012789 00000 n 
+0000012891 00000 n 
+0000013007 00000 n 
+0000013114 00000 n 
+trailer
+<< /Size 36 /Root 1 0 R /Info 35 0 R >>
+startxref
+13304
+%%EOF
