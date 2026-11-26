@@ -33,14 +33,17 @@ Read in order; tick a box when you could explain the note without looking.
 - [x] [LLM Training Pipeline](/wiki/resources/notes/LLM-Training-Pipeline.md)
 - [ ] [Scaling Laws and Compute](/wiki/resources/notes/Scaling-Laws-and-Compute.md)
 - [ ] [nanochat](/wiki/resources/notes/nanochat.md), then run its CPU example
+- [ ] Read the annotations in [DCLM](/wiki/resources/notes/Source-DCLM.md) and [SmolLM2](/wiki/resources/notes/Source-SmolLM2.md)
 
 ## Stage 3: after pretraining
 
 - [ ] [SFT vs RL](/wiki/resources/notes/SFT-vs-RL.md)
-- [ ] [Reasoning Models and RL](/wiki/resources/notes/Reasoning-Models-and-RL.md)
-- [ ] [Mixture of Experts](/wiki/resources/notes/Mixture-of-Experts.md), not written yet, so the link is dimmed
+- [ ] [Reasoning Models and RL](/wiki/resources/notes/Reasoning-Models-and-RL.md), then [Dr. GRPO](/wiki/resources/notes/Source-Dr-GRPO.md)
+- [ ] [DPO](/wiki/resources/notes/Source-DPO.md), preference tuning without RL
+- [ ] [Mixture of Experts](/wiki/resources/notes/Mixture-of-Experts.md), not written yet, so the link is dimmed; read [Mixtral](/wiki/resources/notes/Source-Mixtral.md) for now
 
 ## Stage 4: serving
 
 - [ ] [KV Cache](/wiki/resources/notes/KV-Cache.md)
+- [ ] [YaRN](/wiki/resources/notes/Source-YaRN.md), for longer contexts
 - [ ] The [project](/wiki/projects/Train-a-Tiny-Chat-Model/overview.md): train one and talk to it

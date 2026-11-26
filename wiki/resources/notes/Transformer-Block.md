@@ -50,6 +50,10 @@ The additions are residual connections: each block only *adds* to a running stre
 
 In nanochat the depth decides the rest ([[nanochat#^one-dial]]).
 
+## Where positions come in
+
+Attention by itself does not know token order. Most current models rotate queries and keys by an angle that grows with position (RoPE), so attention sees how far apart two tokens are. [YaRN](/wiki/resources/notes/Source-YaRN.md), annotated in this vault, explains it on its page 3 and shows how to stretch it to longer texts.
+
 ## Next
 
 - At inference the keys and values of past tokens are reused: [[KV-Cache]].

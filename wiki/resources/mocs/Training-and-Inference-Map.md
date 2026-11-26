@@ -22,11 +22,13 @@ How a model is built, stage by stage, and then served.
 2. [Transformer Block](/wiki/resources/notes/Transformer-Block.md)
 3. [LLM Training Pipeline](/wiki/resources/notes/LLM-Training-Pipeline.md)
 4. [Scaling Laws and Compute](/wiki/resources/notes/Scaling-Laws-and-Compute.md)
-5. [SFT vs RL](/wiki/resources/notes/SFT-vs-RL.md)
+5. [SFT vs RL](/wiki/resources/notes/SFT-vs-RL.md), and [DPO](/wiki/resources/notes/Source-DPO.md) between them
+6. Data: [DCLM](/wiki/resources/notes/Source-DCLM.md) and [SmolLM2](/wiki/resources/notes/Source-SmolLM2.md)
 
 ## Serving it
 
 - [KV Cache](/wiki/resources/notes/KV-Cache.md)
+- [YaRN](/wiki/resources/notes/Source-YaRN.md): longer contexts than training
 
 ## When it goes wrong
 

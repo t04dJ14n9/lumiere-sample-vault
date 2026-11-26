@@ -52,3 +52,4 @@ Almost all of it goes into pretraining, which is why the [Time-to-GPT-2 leaderbo
 - [[nanochat]], which has one script per stage
 - [[BPE-Tokenization]] and [[Transformer-Block]] for the first two stages
 - [Reasoning models and RL](/wiki/resources/notes/Reasoning-Models-and-RL.md) for the last
+- [DeepSeek-Coder-V2](/wiki/resources/notes/Source-DeepSeek-Coder-V2.md) for continued pretraining from someone else's base model

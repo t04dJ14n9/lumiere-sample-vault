@@ -18,7 +18,7 @@ tags:
 
 S-002 · 2026-11-26
 
-The spike at step 3,200 lined up with one data shard full of repeated lines. Skipping the shard and resuming from the checkpoint gave a smooth curve. Added the check to the [playbook](/wiki/resources/notes/Playbook-Debugging-a-Loss-Spike.md).
+The spike at step 3,200 lined up with one data shard full of repeated lines. Skipping the shard and resuming from the checkpoint gave a smooth curve. Added the check to the [playbook](/wiki/resources/notes/Playbook-Debugging-a-Loss-Spike.md). [DCLM](/wiki/resources/notes/Source-DCLM.md) makes the same point at scale: better-filtered data gives better models for the same compute.
 
 ## Bits per byte, not loss
 

@@ -41,7 +41,7 @@ The cache trades compute for memory. Per token it stores a key and a value in ev
 
 $$\text{bytes per token} = 2 \times L \times d \times \text{bytes per number}$$
 
-For long conversations or many users at once this memory, not the weights, becomes the limit. That is why serving systems page, share or compress the cache.
+For long conversations or many users at once this memory, not the weights, becomes the limit. That is why serving systems page, share or compress the cache, and why some architectures shrink it (DeepSeek-V2's latent attention, in [[Classic-Papers]]). Contexts longer than training are [YaRN](/wiki/resources/notes/Source-YaRN.md)'s subject.
 
 > [!question] Open
 > How much of nanochat's inference time is attention over the cache, and how much is the MLPs? Measure with `scripts/infer_bench.py`.

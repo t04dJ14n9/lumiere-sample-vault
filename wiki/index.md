@@ -14,7 +14,7 @@ tags:
 
 # Start here
 
-Welcome. This is a small, made-up knowledge vault about **large language models**, built around [nanochat](/wiki/resources/notes/nanochat.md), a small repository that trains a chat model end to end, and a few notes on recent progress. It exists to show what [Lumiere](https://marketplace.visualstudio.com/items?itemName=t04dJ14n9.lumiere) does with Obsidian-style notes and PDFs in VS Code. Everything in it is written for this vault and free to reuse (CC0).
+Welcome. This is a small, made-up knowledge vault about **large language models**, built around [nanochat](/wiki/resources/notes/nanochat.md), a small repository that trains a chat model end to end, and a few notes on recent progress. It exists to show what [Lumiere](https://marketplace.visualstudio.com/items?itemName=t04dJ14n9.lumiere) does with Obsidian-style notes and PDFs in VS Code. Everything in it is written for this vault and free to reuse (CC0), except seven real papers in `wiki/assets/`, which keep their CC BY 4.0 licenses ([attribution](/wiki/assets/ATTRIBUTION.md)).
 
 You are looking at it in Live Preview. **Click into any line** and the Markdown behind it appears around the caret, then hides again when you leave. Use **Toggle Live Preview/Source Mode** in the Command Palette (F1) to see the plain text.
 
@@ -23,7 +23,7 @@ You are looking at it in Live Preview. **Click into any line** and the Markdown 
 1. **Follow a link.** Ctrl-click (Cmd-click on a Mac) a link to open it in a new tab. Note bodies use Markdown links, like [LLM Training Pipeline](/wiki/resources/notes/LLM-Training-Pipeline.md), and wikilinks in places, like [[Scaling-Laws-and-Compute|scaling laws]]. Both resolve the same way.
 2. **Jump to a heading or a block.** [[Transformer-Block#Attention in one line]] goes to a section, and [[nanochat#^one-dial]] goes to one paragraph by its block id.
 3. **Embed a note.** The section under [An embedded note](#an-embedded-note) is not copied, it is the "short version" of the [pipeline note](/wiki/resources/notes/LLM-Training-Pipeline.md), shown in place with `![[LLM-Training-Pipeline#The short version]]`.
-4. **Open a PDF at a page.** [Page 2 of the study notes](/wiki/assets/nanochat-Study-Notes.pdf#page=2) opens in Lumiere's PDF reader, already annotated: a highlight, an underline and a margin note. The [source note](/wiki/resources/notes/Source-nanochat-Study-Notes.md) also draws that page inline.
+4. **Open a PDF at a page.** [Page 6 of the DCLM paper](/wiki/assets/DCLM-2406.11794v4-annotated.pdf#page=6) opens in Lumiere's PDF reader, where this vault has already annotated it: a highlight and a margin box on the CORE score that nanochat reports. The [source note](/wiki/resources/notes/Source-DCLM.md) also draws that page inline.
 5. **Read the properties.** Open any note: the frontmatter at the top is a typed editor, with dates, a checkbox, numbers, tags and links as chips.
 6. **Look around.** Open **Go to Heading…** (outline), **Quick Switcher**, **Search Vault…**, and **Open Vault Graph** from the Command Palette. The Explorer has **Markdown Outline**, **Tags**, **Backlinks** and **Outgoing Links** sections.
 
@@ -45,7 +45,7 @@ You are looking at it in Live Preview. **Click into any line** and the Markdown 
 | Code blocks with highlighting | [[BPE-Tokenization]] (Python), [[KV-Cache]] (TypeScript), [[Playbook-Debugging-a-Loss-Spike]] and [[nanochat]] (shell) |
 | Mermaid diagrams | [[LLM-Training-Pipeline]], and clickable nodes in [[LLM-Map]] |
 | Images, SVG and PNG | [[LLM-Training-Pipeline]], [[Playbook-Debugging-a-Loss-Spike]], [project progress](/wiki/projects/Train-a-Tiny-Chat-Model/progress.md) |
-| PDF reader, page links, an inline page, annotations | [[Source-nanochat-Study-Notes]], [[Source-Scaling-Laws-Cheat-Sheet]] |
+| PDF reader, page links, an inline page, annotations | [[Source-DCLM]], [[Source-SmolLM2]], [[Source-Dr-GRPO]], [[Source-YaRN]] |
 | A local HTML file as a card | [[BPE-Tokenization]] |
 | Bases (a live table of notes) | [[LLM-Map]], [LLM Study](/wiki/areas/LLM-Study.md) |
 | A live search in a `query` block | [Training and Inference Map](/wiki/resources/mocs/Training-and-Inference-Map.md) |
@@ -63,11 +63,11 @@ The layout follows [claude-obsidian](https://github.com/t04dJ14n9/claude-obsidia
 | `wiki/projects/Train-a-Tiny-Chat-Model/` | A project: [overview](/wiki/projects/Train-a-Tiny-Chat-Model/overview.md), [progress](/wiki/projects/Train-a-Tiny-Chat-Model/progress.md), [decisions](/wiki/projects/Train-a-Tiny-Chat-Model/decisions.md), [discoveries](/wiki/projects/Train-a-Tiny-Chat-Model/discoveries.md) |
 | `wiki/areas/` | An ongoing responsibility: [LLM Study](/wiki/areas/LLM-Study.md) |
 | `wiki/resources/mocs/` | Maps of content, the entry points |
-| `wiki/resources/notes/` | The notes themselves, flat: concepts, a repository card, two sources, a question, a comparison, a playbook |
+| `wiki/resources/notes/` | The notes themselves, flat: concepts, a repository card, seven paper sources, a list of classic papers, a question, a comparison, a playbook |
 | `wiki/resources/bases/` | `.base` files that list notes by their properties |
 | `wiki/archives/` | Finished work: [Char-level GPT spike](/wiki/archives/Char-Level-GPT-Spike.md) |
 | `wiki/daily/` | Daily notes: [today](/wiki/daily/2026-11-26.md) and [yesterday](/wiki/daily/2026-11-25.md) |
-| `wiki/assets/` | The images, the two PDFs and the HTML file |
+| `wiki/assets/` | The images, seven CC BY 4.0 papers (four annotated by this vault) and the HTML file |
 
 Also in `wiki/`: [Recent context](/wiki/hot.md), a cache of what I was doing, and the [Operation log](/wiki/log.md).
 
@@ -77,7 +77,7 @@ Also in `wiki/`: [Recent context](/wiki/hot.md), a cache of what I was doing, an
 - [ ] Tick this box by clicking it.
 - [ ] Type `[[` in the sandbox and pick a note.
 - [ ] Open [BPE Tokenization](/wiki/resources/notes/BPE-Tokenization.md) and click **Open** on the HTML card.
-- [ ] Open the [cheat sheet PDF](/wiki/assets/Scaling-Laws-Cheat-Sheet.pdf) and highlight a line of your own.
+- [ ] Open the [DPO paper](/wiki/assets/DPO-2305.18290v3.pdf) and highlight a line of your own.
 
 > [!info] Lumiere is not affiliated with Obsidian
 > The vault is plain Markdown and also opens in Obsidian, where `.base` files and most of the syntax here work too.

@@ -36,13 +36,20 @@ flowchart LR
 ## The two sub-maps
 
 - [Training and Inference Map](/wiki/resources/mocs/Training-and-Inference-Map.md): how a model is built and served.
-- [Sources and Reading Map](/wiki/resources/mocs/Sources-and-Reading-Map.md): the PDFs and what the notes are based on.
+- [Sources and Reading Map](/wiki/resources/mocs/Sources-and-Reading-Map.md): the papers and what the notes are based on.
 
 ## Recent progress
 
 - [[Time-to-GPT-2-Leaderboard]]: pretraining keeps getting faster.
 - [[Reasoning-Models-and-RL]]: models that think before answering.
 - [[What-Does-a-Tiny-Chat-Model-Cost]]: the price of a GPT-2 grade model today.
+- [[Source-SmolLM2]]: a small model trained far past compute optimal.
+- [[Source-Dr-GRPO]]: what RL on base models really changes.
+- [[Source-Mixtral]] and [[Source-DeepSeek-Coder-V2]]: mixture-of-experts models.
+
+## Papers
+
+Seven CC BY 4.0 papers are in the vault, four annotated; the [Sources and Reading Map](/wiki/resources/mocs/Sources-and-Reading-Map.md) lists them, and [[Classic-Papers]] links the ones we may not include.
 
 ## Reference
 

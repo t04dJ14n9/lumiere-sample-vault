@@ -38,6 +38,9 @@ $$A_i = \frac{r_i - \operatorname{mean}(r_1, \dots, r_G)}{\operatorname{std}(r_1
 
 Answers better than their siblings are made more likely, worse ones less.[^grpo]
 
+> [!warning] A known bias
+> [Dr. GRPO](/wiki/resources/notes/Source-Dr-GRPO.md) shows that dividing by the group's spread and by answer length biases training toward longer answers, especially wrong ones, and drops both. Its PDF is in this vault, annotated.
+
 > [!tip] In nanochat
 > The README lists an RL script, `scripts/chat_rl.py`, and a GSM8K task of grade-school math problems, a natural fit for a checker.
 

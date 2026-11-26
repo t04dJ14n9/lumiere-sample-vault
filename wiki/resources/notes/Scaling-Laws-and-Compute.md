@@ -38,7 +38,12 @@ floating-point operations: about $2ND$ for the forward pass and $4ND$ for the ba
 | 1 B | 20 B | $1.2 \times 10^{20}$ |
 | 7 B | 140 B | $5.9 \times 10^{21}$ |
 
-The rows are arithmetic, not measurements. The same table is on the [cheat sheet PDF](/wiki/assets/Scaling-Laws-Cheat-Sheet.pdf), with annotations.
+The rows are arithmetic, not measurements.
+
+## Two papers in this vault
+
+- [SmolLM2](/wiki/resources/notes/Source-SmolLM2.md) goes the other way on purpose: about 11 trillion tokens for 1.7B parameters, some 6,500 tokens per parameter, to get a small model that is cheap to run.
+- [DCLM](/wiki/resources/notes/Source-DCLM.md) holds the training recipe fixed and changes only the data, and finds that better-filtered data gives better models for the same compute.
 
 ## In nanochat
 

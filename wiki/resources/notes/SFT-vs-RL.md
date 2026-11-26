@@ -28,6 +28,10 @@ Both start from a pretrained base model and both are small next to pretraining. 
 | Can go wrong by | copying the demos' mistakes | gaming a weak reward |
 | In nanochat | `scripts/chat_sft.py` | `scripts/chat_rl.py` |
 
+## A third option
+
+[DPO](/wiki/resources/notes/Source-DPO.md) learns from pairs of preferred and rejected answers like RL, but trains like SFT, with no reward model and no sampling.
+
 ## Rule of thumb
 
 Use SFT to teach *what an answer looks like*, then RL to teach *which answers are right* where a program can tell. See the [pipeline](/wiki/resources/notes/LLM-Training-Pipeline.md#where-the-compute-goes) for where both sit and [[Reasoning-Models-and-RL]] for what RL changed.
